@@ -6,3 +6,6 @@ __pycache__
 
 # Locale static
 staticfiles
+
+# Builds
+dist
