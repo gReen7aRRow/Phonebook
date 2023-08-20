@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 
+from phonebook.engine import get_command, FAQ
+
 
 def main():
-    print('Worked!')
+    print('Запущен телефонный справочник.')
+    print(FAQ)
+
+    get_command()
+
+    print('Работа программы завершена.')
 
 
 if __name__ == '__main__':
