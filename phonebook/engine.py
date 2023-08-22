@@ -1,12 +1,7 @@
 """Main module for get command and generate response"""
 
-FAQ = """
-Ряд имеющихся команд:
-    Добавить - Добавление нового пользователя в записную книжку.
-    Изменить - Изменение данных существующего пользователя.
-    Помощь - Вывод список возможных команд.
-    Выйти - Завершить работу программы.
-"""
+from create_data import addNewPersonAndSaveDB
+from constants import FAQ
 
 
 def get_command():
@@ -16,7 +11,7 @@ def get_command():
         command = str(input('Введите команду: '))
 
         if command == 'Добавить':
-            pass
+            addNewPersonAndSaveDB()
 
         elif command == 'Изменить':
             pass

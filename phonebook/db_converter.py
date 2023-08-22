@@ -10,6 +10,4 @@ def from_db() -> dict:
 
 def to_db(data: dict):
     with open('phonebook/db.json', 'w') as json_file:
-        json.dump(data, json_file, indent=4)
-
-to_db({'blabla': []})
+        json.dump(data, json_file, indent=4, ensure_ascii=False)

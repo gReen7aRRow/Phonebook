@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-from phonebook.engine import get_command, FAQ
+from phonebook.engine import get_command
+from constants import FAQ
 
 
 def main():
