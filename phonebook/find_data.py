@@ -1,21 +1,23 @@
 """Optional module for find any data from DB"""
 
-from create_data import get_personality_data
-from db_converter import from_db, to_db
+from phonebook.create_data import get_personality_data
+from phonebook.db_converter import from_db
 
 
 def getFindPersons():
     print(
-        'Введите данные пользователя для поиска. '
-        'Неизвестные Вам пропустите.'
-        )
-    
+        '\nНиже заполните поля значениями. '
+        'Нажмите Enter, чтобы не заполнять поле.'
+    )
+
     persons_list = findPersonsPerParams()
 
     if len(persons_list) != 0:
+        print(f'\nНайдено {len(persons_list)} человек:\n')
+
         for person in persons_list:
-            # обработка данных человека
-            pass
+            print(person)
+
     else:
         print("Ничего не найдено. Попробуйте ещё раз")
 
@@ -29,17 +31,19 @@ def findPersonsPerParams() -> list:
     for id in all_data:
         person = all_data[id]
 
+        all_similarities.append(id)
+
         for param in find_data:
             if (
                 find_data[param] == "Поле отсутствует"
                 or
                 person[param] == "Поле отсутствует"
-                ):
+            ):
                 continue
-            
-            if find_data[param] != person[param]:
+
+            elif find_data[param] != person[param]:
+                all_similarities.remove(id)
+
                 break
-        
-        all_similarities.append(id)
-    
+
     return all_similarities
