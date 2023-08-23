@@ -1,32 +1,27 @@
 """Optional module for create data for DB"""
 
-from db_converter import from_db, to_db
+from db_converter import upgrade_db
+from constants import PARAMS
 
 
 def addNewPersonAndSaveDB():
-    data = from_db()
+    print(
+        '\nНиже заполните поля значениями. '
+        'Нажмите Enter, чтобы не заполнять поле.'
+    )
 
-    new_person = input_data()
+    new_person = get_personality_data()
 
-    new_id = str(len(data) + 1)
-    data[new_id] = new_person
-
-    to_db(data)
+    upgrade_db(new_person)
 
 
-def input_data() -> dict:
-    first_name = str(input('Введите имя: '))
-    last_name = str(input('Введите фамилию: '))
-    middle_name = str(input('Введите отчество: '))
-    company = str(input('Введите название организации: '))
-    work_phone = int(input('Введите рабочий телефон: '))
-    cell_phone = int(input('Введите сотовый телефон: '))
+def get_personality_data() -> dict:
+    new_person = {}
 
-    return {
-        "first_name": first_name,
-        "last_name": last_name,
-        "middle_name": middle_name,
-        "company": company,
-        "work_phone": work_phone,
-        "cell_phone": cell_phone
-    }
+    for param in PARAMS:
+        try:
+            new_person[param] = input(f'Введите поле {PARAMS[param]}: ')
+        except:
+            new_person[param] = "Поле отсутствует"
+    
+    return new_person
