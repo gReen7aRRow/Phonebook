@@ -1,7 +1,7 @@
 """Optional module for find any data from DB"""
 
 from phonebook.create_data import get_personality_data
-from phonebook.db_converter import from_db
+from phonebook.db_converter import from_db, getStyledData
 
 
 def getFindPersons():
@@ -10,16 +10,16 @@ def getFindPersons():
         'Нажмите Enter, чтобы не заполнять поле.'
     )
 
-    persons_list = findPersonsPerParams()
+    id_list = findPersonsPerParams()
 
-    if len(persons_list) != 0:
-        print(f'\nНайдено {len(persons_list)} человек:\n')
+    if len(id_list) != 0:
+        print(f'\nНайдено {len(id_list)} человек:')
 
-        for person in persons_list:
-            print(person)
+        for id in id_list:
+            getStyledData(id)
 
     else:
-        print("Ничего не найдено. Попробуйте ещё раз")
+        print('\nНичего не найдено. Попробуйте ещё раз')
 
 
 def findPersonsPerParams() -> list:

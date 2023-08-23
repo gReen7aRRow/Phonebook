@@ -4,7 +4,7 @@ from phonebook.db_converter import upgrade_db
 from phonebook.constants import PARAMS
 
 
-def addNewPersonAndSaveDB():
+def addNewPersonAndSaveDB(id=None):
     print(
         '\nНиже заполните поля значениями. '
         'Нажмите Enter, чтобы не заполнять поле.'
@@ -12,11 +12,10 @@ def addNewPersonAndSaveDB():
 
     new_person = get_personality_data()
 
-    upgrade_db(new_person)
+    upgrade_db(new_person, id)
 
     print(
-        '\nПользователь успешно создан '
-        'и добавлен в справочник.'
+        '\nПользователь успешно добавлен в справочник.'
     )
 
 

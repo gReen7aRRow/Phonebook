@@ -14,21 +14,5 @@
         "company": "",
         "work_phone": "",
         "cell_phone": ""
-    },
-    "3": {
-        "first_name": "Поле отсутствует",
-        "last_name": "Поле отсутствует",
-        "middle_name": "Поле отсутствует",
-        "company": "Поле отсутствует",
-        "work_phone": "Поле отсутствует",
-        "cell_phone": "Поле отсутствует"
-    },
-    "4": {
-        "first_name": "a",
-        "last_name": "b",
-        "middle_name": "c",
-        "company": "comp",
-        "work_phone": "133",
-        "cell_phone": "123"
     }
 }

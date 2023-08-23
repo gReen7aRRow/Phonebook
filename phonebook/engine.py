@@ -2,6 +2,7 @@
 
 from phonebook.create_data import addNewPersonAndSaveDB
 from phonebook.find_data import getFindPersons
+from phonebook.change_data import getChangePersonsParams
 from phonebook.constants import FAQ
 
 
@@ -15,7 +16,7 @@ def get_command():
             addNewPersonAndSaveDB()
 
         elif command == 'Изменить':
-            pass
+            getChangePersonsParams()
 
         elif command == 'Поиск':
             getFindPersons()

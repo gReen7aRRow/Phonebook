@@ -22,3 +22,18 @@ def upgrade_db(new_data: dict, id=None):
     all_data[id] = new_data
 
     to_db(all_data)
+
+
+def getStyledData(id: str):
+    all_data = from_db()
+
+    person = all_data[id]
+
+    print(
+        f'\nid: {id}\n'
+        f'ФИО: {person["last_name"]} {person["first_name"]}'
+        f' {person["middle_name"]}\n'
+        f'Организация: {person["company"]}\n'
+        f'Рабочий номер: {person["work_phone"]}; '
+        f'Личный номер: {person["cell_phone"]}'
+    )
