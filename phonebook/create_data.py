@@ -23,7 +23,7 @@ def get_personality_data() -> dict:
     new_person = {}
 
     for param in PARAMS:
-        new_person[param] = input(f'Введите поле {PARAMS[param]}: ')
+        new_person[param] = input(f'Введите поле {PARAMS[param]}: ').strip()
 
         if new_person[param] == "":
             new_person[param] = "Поле отсутствует"
