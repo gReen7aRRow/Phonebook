@@ -1,4 +1,4 @@
-"""Optional module for change writed data from db"""
+"""Optional module for change writed data from DB"""
 
 from phonebook.create_data import addNewPersonAndSaveDB
 from phonebook.find_data import getFindPersons

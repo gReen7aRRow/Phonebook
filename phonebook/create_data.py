@@ -1,6 +1,6 @@
 """Optional module for create data for DB"""
 
-from phonebook.db_converter import upgrade_db
+from phonebook.data_converter import upgrade_db
 from phonebook.constants import PARAMS
 
 

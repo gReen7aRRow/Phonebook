@@ -1,7 +1,7 @@
 """Optional module for find any data from DB"""
 
 from phonebook.create_data import get_personality_data
-from phonebook.db_converter import from_db, getStyledData
+from phonebook.data_converter import from_db, getStyledData
 
 
 def getFindPersons():

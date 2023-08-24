@@ -4,15 +4,47 @@
         "last_name": "adminov",
         "middle_name": "adminovich",
         "company": "adminka",
-        "work_phone": 88005553535,
-        "cell_phone": 89260001010
+        "work_phone": "777",
+        "cell_phone": "777"
     },
     "2": {
-        "first_name": "",
-        "last_name": "",
-        "middle_name": "",
-        "company": "",
-        "work_phone": "",
-        "cell_phone": ""
+        "first_name": "Иван",
+        "last_name": "Иванов",
+        "middle_name": "Иванович",
+        "company": "google",
+        "work_phone": "1234",
+        "cell_phone": "1234"
+    },
+    "3": {
+        "first_name": "Пётр",
+        "last_name": "Петров",
+        "middle_name": "Петрович",
+        "company": "tiktok",
+        "work_phone": "1234",
+        "cell_phone": "1234"
+    },
+    "4": {
+        "first_name": "Александр",
+        "last_name": "Александров",
+        "middle_name": "Александрович",
+        "company": "apple",
+        "work_phone": "1234",
+        "cell_phone": "1234"
+    },
+    "5": {
+        "first_name": "Сидор",
+        "last_name": "Сидоров",
+        "middle_name": "Сидорович",
+        "company": "yandex",
+        "work_phone": "1234",
+        "cell_phone": "1234"
+    },
+    "6": {
+        "first_name": "Алексей",
+        "last_name": "Алексеев",
+        "middle_name": "Алексеевич",
+        "company": "youtube",
+        "work_phone": "1234",
+        "cell_phone": "1234"
     }
 }

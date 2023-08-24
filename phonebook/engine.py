@@ -3,6 +3,7 @@
 from phonebook.create_data import addNewPersonAndSaveDB
 from phonebook.find_data import getFindPersons
 from phonebook.change_data import getChangePersonsParams
+from phonebook.list_data import getListData
 from phonebook.constants import FAQ
 
 
@@ -22,7 +23,7 @@ def get_command():
             getFindPersons()
 
         elif command == 'Список':
-            pass
+            getListData()
 
         elif command == 'Помощь':
             print(FAQ)
