@@ -1,7 +1,7 @@
 """Optional module for showing data in list"""
 
-from phonebook.db_converter import from_db
-from phonebook.db_converter import getStyledData
+from phonebook.data_converter import from_db
+from phonebook.data_converter import getStyledData
 
 
 def getListData():
