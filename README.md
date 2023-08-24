@@ -10,3 +10,6 @@ pip3 install --upgrade git+https://github.com/gReen7aRRow/Phonebook.git
 - Установка зависимостей - ***make install***
 - Сборка проекта  - ***make build***
 - Запуск проекта - ***phonebook***
+
+### Demonstration:
+[![asciicast](https://asciinema.org/a/517788.svg)](https://asciinema.org/a/517788)

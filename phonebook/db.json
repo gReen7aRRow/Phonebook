@@ -32,18 +32,26 @@
         "cell_phone": "1234"
     },
     "5": {
-        "first_name": "Сидор",
-        "last_name": "Сидоров",
+        "first_name": "Сидоров",
+        "last_name": "Сидор",
         "middle_name": "Сидорович",
-        "company": "yandex",
+        "company": "apple",
         "work_phone": "1234",
-        "cell_phone": "1234"
+        "cell_phone": "4321"
     },
     "6": {
         "first_name": "Алексей",
         "last_name": "Алексеев",
         "middle_name": "Алексеевич",
         "company": "youtube",
+        "work_phone": "1234",
+        "cell_phone": "1234"
+    },
+    "7": {
+        "first_name": "Олег",
+        "last_name": "Олегов",
+        "middle_name": "Олегович",
+        "company": "yandex",
         "work_phone": "1234",
         "cell_phone": "1234"
     }
